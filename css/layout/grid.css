@@ -1,0 +1,86 @@
+
+section {
+    padding: 10rem 0;
+}
+
+.section-container {
+    max-width: 1400px;
+    padding: 0 3rem;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-bottom: 5rem;
+}
+
+.grid-item {
+    padding: 2rem;
+}
+
+.grid-item > div {
+    width: 100%;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero .hero-textbox {
+    text-align: center;
+}
+
+.hero-svg {
+	position: absolute;
+	top: 20px;
+}
+
+.line1 {
+	stroke-dasharray:2300;
+	stroke-dashoffset:2300;
+	animation: dash 3s linear forwards;
+	fill: none;
+    stroke: var(--color-primary);
+    stroke-width: 11;
+    stroke-miterlimit: 10;
+}
+
+.image-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items :center;
+    height: 100%;
+}
+
+.image-center img {
+    width: 100%;
+}
+
+
+div[class*="transition-overlay"] {
+    position: fixed;
+    background: var(--color-dark);
+    z-index: 999;
+    width: 100vw;
+    height: 50vh;
+}
+
+.transition-overlay-top {
+    border-bottom: 5px solid var(--color-primary);
+    top: -100vh;
+    animation: go-top .5s ease-in;
+}
+
+.transition-overlay-bottom {
+    border-top: 5px solid var(--color-primary);
+    bottom: -100vh;
+    animation: go-bottom .5s ease-in;
+}
+
+video {
+    width: 100%;
+}

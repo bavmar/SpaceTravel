@@ -1,0 +1,66 @@
+/* full css reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    font: inherit;
+}
+
+html {
+    /* This defines what 1rem is */
+    font-size: 62.5%; /* 1 rem = 10px; 10px/16px = 62.5% */
+    overflow: auto;
+}
+
+:root {
+    --color-primary:        #ff8e5e;
+    --color-primary-dark:   #ff8e5e80;
+    --color-dark:           #1d1e22;
+    --color-light:          #f6f4f2;
+    --color-gray:           #b7b5b3;
+    --color-gray-dark:      #313238;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary);
+}
+
+/* Shrink all elements that use REM (responsive) */
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 56.25%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    html {
+        font-size: 50%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 40%;
+    }
+}
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 38%;
+    }
+}
+
